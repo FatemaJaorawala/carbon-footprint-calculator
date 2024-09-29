@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Footprint Calculator</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Include Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+    <!-- Add other Firebase products you use here -->
+
+    <!-- Include your custom Firebase config script -->
+    <script src="js/firebase_config.js"></script>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="calc/solutions.html">Solutions for Reduction</a></li>
+            <li><a href="calc/carbon_calc.html">Calculate</a></li>
+            <li><a href="login.html">Sign In</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to the Carbon Footprint Calculator</h1>
+    </header>
+
+    <!-- Introduction Section -->
+    <section id="intro">
+        <h2>What is Carbon Footprint?</h2>
+        <p>Your carbon footprint is the total amount of greenhouse gases you produce, directly and indirectly, through your daily activities. Our app helps you track and reduce your carbon footprint.</p>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works">
+        <h2>How It Works</h2>
+        <p>Answer a few simple questions about your lifestyle, and we’ll calculate your carbon footprint. You’ll also get tips on how to reduce it!</p>
+    </section>
+
+    <!-- Navigation Section (Get Started) -->
+    <section id="navigation">
+        <h2>Get Started</h2>
+        <p><a href="login.html">Login</a></p>
+    </section>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Footprint Calculator</title>
+    <link rel="stylesheet" href="carbon_calc.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Carbon Footprint Calculator</h1>
+        <form id="carbonForm">
+            <label for="miles">Miles driven per day:</label>
+            <input type="number" id="miles" name="miles" required>
+            
+            <label for="electricity">Electricity used per day (kWh):</label>
+            <input type="number" id="electricity" name="electricity" required>
+            
+            <label for="plastic">Plastic items disposed of per day:</label>
+            <input type="number" id="plastic" name="plastic" required>
+            
+            <!-- New Questions -->
+
+            <label for="hoursElectronics">Hours using electronic devices:</label>
+            <input type="number" id="hoursElectronics" name="hoursElectronics" required>
+
+            <label for="publicTransportDays">Days using public transportation:</label>
+            <input type="number" id="publicTransportDays" name="publicTransportDays" min="0" max="7" required>
+            
+            <button type="button" onclick="calculateFootprint()">Calculate</button>
+        </form>
+    
+        <!-- This is where the results and personalized messages will be shown -->
+        <div class="result" id="result"></div>
+    </div>
+
+    <!-- Link to your JS file for calculations and personalized messages -->
+    <script src="carbon_calc.js"></script>
+</body>
+</html>

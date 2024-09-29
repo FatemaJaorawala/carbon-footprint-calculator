@@ -1,0 +1,142 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20230426/pngtree-carbon-dioxide-emission-from-a-factory-steam-image_2518297.jpg'); /* Background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background */
+    background-repeat: no-repeat; /* Prevent repeating */
+    background-attachment: fixed; /* Keep the background fixed during scroll */
+    color: #f8f9fa; /* Light text color for better contrast */
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 10px 0; /* Padding for spacing */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative; /* Position relative */
+    margin-top: 60px; /* Move the header further down */
+    text-align: center; /* Center the header content */
+    z-index: 999;
+}
+
+header h1 {
+    color: black; /* Black text color */
+    font-size: 2.5em; /* Header font size */
+}
+
+/* Navbar */
+nav {
+    background-color: rgba(155, 234, 58, 0.8); /* Semi-transparent light green background for navbar */
+    display: flex;
+    justify-content: center; /* Centering navbar items */
+    align-items: center;
+    position: fixed; /* Keep navbar fixed */
+    width: 100%;
+    top: 0; /* Stick to the top */
+    z-index: 1000;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 40px; /* Space between menu items */
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black; /* Black text color */
+    font-size: 1.2em;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #333; /* Slightly darker on hover */
+}
+
+/* CTA Buttons (like Sign In) */
+nav ul li a.cta-btn {
+    background-color: white;
+    color: #28a745;
+    border: 2px solid #28a745;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a.cta-btn:hover {
+    background-color: #28a745;
+    color: white;
+}
+
+/* Main Section */
+main {
+    padding: 80px 20px;
+    margin-top: 160px; /* Increased margin to account for the header's position */
+}
+
+section {
+    margin: 10px auto;
+    padding: 20px 20px;
+    max-width: 899px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white for better visibility */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+section p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #343a40;
+    color: white;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 2em;
+    }
+
+    section p {
+        font-size: 1em;
+    }
+}

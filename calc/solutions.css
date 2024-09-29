@@ -1,0 +1,72 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    text-align: center; /* Center text alignment for the body */
+}
+
+header {
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.header-image {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Centering the main section */
+main {
+    margin: 20px auto; /* Auto margins for left and right for centering */
+    max-width: 800px; /* Set a max width for the main content */
+}
+
+.solution {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.solution h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.solution-image {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
